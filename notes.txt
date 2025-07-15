@@ -1,0 +1,68 @@
+1.Create folder on desktop, open on vs code.
+
+2.npm create vite@latest .(dot)	-- You are already inside a folder and want to scaffold the project there
+  npm create vite@latest project_name -- You want to create a new project in a new folder
+
+3.npm i -- for node_modules(all depensencies for projects). These are defined in the package.json
+  "dependencies" – code needed at runtime
+  "devDependencies" – code needed only during development.
+  It’s excluded in .gitignore
+
+Folder Structure For React Project --
+
+a.📁 public/ -- Static files go here (e.g., images, icons, robots.txt)
+  Jo files public/ folder mein hain, wo bina kisi badlaav ke (as-is) browser ko milti hain — aur directly root URL par milti hain.Iska matlab hai Vite koi processing ya bundling nahi karta un files ke saath.
+
+b.📁 src/ -- Source code lives here (JavaScript/TypeScript, components, styles)
+You’ll usually create subfolders here like components/, pages/, assets/, etc.
+Default files:
+
+main.ts / main.jsx – app entry point (where rendering starts), "main.js converts App.js into DOM structure"
+That action is called “mounting to the DOM”.(mount - to organize something)
+
+App.tsx / App.jsx – main component of the app. Core UI layout/component
+
+c.Git --	A tool on your computer	Tracks changes to files (version control).Git is a piece of software.
+  GitHub -- A website Stores your Git projects online so you can share and collaborate
+
+📄gitignore -- Tells Git which files/folders to ignore or not include in version control(Version control is the software engineering practice of controlling, organizing, and tracking different versions in history of computer files; primarily source code text files). Usually includes: node_modules/, .env, dist/. These files will not be committed or pushed to GitHub or other repos.
+
+d.ESLint --	Focuses on code quality and errors. eslint.config.js --It is a configuration file for ESLint.A configuration file is a file that tells a tool how to behave or what settings to use.
+
+e.index.html -- The first HTML file the browser loads.
+Vite’s role	-- Serves it and injects your app into it
+<div id="root">	The placeholder where your app goes.
+
+🔄 Step-by-Step: What Happens When You Open the App?
+✅ Browser loads index.html
+✅ It sees this line: <script type="module" src="/main.js"></script>
+✅ Browser then loads and runs main.js
+✅ main.js renders the React (or Vue) app inside <div id="root">
+
+f.package-lock.json -- Locks the exact versions of every installed package.Makes sure everyone installs the exact same thing, even on different computers.
+10.package.json --	Lists your app's dependencies and scripts(Scripts are shortcut commands we define to run common tasks — like starting your app, building it, or running tests).
+
+g.📄 README.md -- Basic project instructions. Safe to edit or replace with your own project documentation
+
+h.vite.config.js -- is like a settings file for Vite.
+
+Which plugins to use (like React, Vue, etc.)
+How to run the dev server (port, proxy, etc.)
+Where the build files should go
+
+It tells Vite:
+"Hey, I'm using React"
+"Start my app on port 3000"
+"Put the final build files in the dist/ folder".
+
+4. Then install tailwind vite, using 6 step process. It will add two extra file - postcss.config.js and tailwind.config.js.
+Delete App.css from src, we don't need it, becoz we are using tailwind css. Delete static file inside public,
+delete react.svg file from assets, delete all code of App.jsx and replace with rfc code.
+
+5.Pushing code at github -- type three commands - 1.
+
+
+
+
+
+
