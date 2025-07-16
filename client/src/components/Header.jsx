@@ -5,10 +5,10 @@ export default function Header() {
   return (
     <div>
       <header className="bg-sky-100 shadow-md">
-        <div className="flex justify-between item-center max-w-6xl mx-auto p-3">
-          {/*text-sm and flex flex-wrap -> for phone sm:text-xl -> for desktop*/}
+        <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
 
           <Link to='/'>
+          {/*text-sm and flex flex-wrap -> for phone sm:text-xl -> for desktop*/}
             <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
               <span className="text-blue-600">Skill</span>
               <span className="text-blue-400">Radar</span>
