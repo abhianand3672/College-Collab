@@ -67,9 +67,14 @@ delete react.svg file from assets, delete all code of App.jsx and replace with r
 CREATE PAGES AND ROUTE --------------------------------------------------------------------------------------
 
 
-1. Inside src, create pages folder, inside it create .jsx pages, like - sign.jsx, about.jsx, home.jsx, etc.
-2. For routing between pages, we will install npm i react-router-dom, inside client folder
-3. 
+1. Inside src, create pages folder, inside it create .jsx pages, like - Sign.jsx, About.jsx, Home.jsx, etc.
+2. For routing between pages, we will install npm i react-router-dom, inside client folder, then setup route of pages in App.jsx. 
+
+CREATE HEADER COMPONENT --------------------------------------------------------------------------------------
+
+1. Inside src folder create component, inside it create header.jsx. Install npm i react-icons for using icons in react project, then import {FaSearch} from 'react-icons/fa'; in HEADER.jsx.
+
+
 
 
 

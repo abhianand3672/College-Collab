@@ -6,9 +6,11 @@ import About from './pages/About';
 import Collaborate from './pages/Collaborate';
 import Profile from './pages/Profile';
 import Register from './pages/Register';
+import Header from './components/Header';
 
 export default function App() {
   return <BrowserRouter>
+  <Header/>                                {/*to include hearder in every pages*/}
   <Routes>
   <Route path='/' element={<Home/>} />
   <Route path='/sign-in' element={<Signin/>} />
