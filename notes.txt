@@ -59,10 +59,17 @@ It tells Vite:
 Delete App.css from src, we don't need it, becoz we are using tailwind css. Delete static file inside public,
 delete react.svg file from assets, delete all code of App.jsx and replace with rfc code.
 
-5.Pushing code at github -- type three commands - 1.
+5.Pushing code at github -- type three commands - 1. git init (enter) 2. git add . (enter) 3. git commit -m "about project". Then create repository on github.After that run there given commands of repository on terminal -1.  git remote add origin https://github.com/abhianand3672/Skill-Share.git (enter)
+          2.  git branch -M main (enter)
+          3.  git push -u origin main(enter)
 
 
+CREATE PAGES AND ROUTE --------------------------------------------------------------------------------------
 
+
+1. Inside src, create pages folder, inside it create .jsx pages, like - sign.jsx, about.jsx, home.jsx, etc.
+2. For routing between pages, we will install npm i react-router-dom, inside client folder
+3. 
 
 
 
