@@ -74,6 +74,27 @@ CREATE HEADER COMPONENT --------------------------------------------------------
 
 1. Inside src folder create component, inside it create header.jsx. Install npm i react-icons for using icons in react project, then import {FaSearch} from 'react-icons/fa'; in HEADER.jsx.
 
+<div className="flex justify-between items-center max-w-6xl mx-auto p-3">
+
+flex- Applies display: flex
+Turns the element into a flex container, allowing for horizontal or vertical alignment of children.
+
+justify-between- Applies justify-content: space-between
+Horizontally spaces child elements so the first item is at the start, the last item is at the end, and others (if any) are spaced evenly in between.
+
+items-center- Applies align-items: center,Vertically centers child elements within the flex container (along the cross-axis).
+
+max-w-6xl-Applies a maximum width of 6xl, which is 72rem (i.e., 1152px).Prevents the container from getting too wide, useful for centered content on large screens.
+
+mx-auto-Applies margin-left: auto and margin-right: auto.Horizontally centers the element inside its parent container.
+
+p-3-Applies padding of 0.75rem (12px) on all sides (top, right, bottom, left).
+
+🔍 Summary:-This whole utility class set is commonly used for centered page headers, navbars, or layout wrappers:
+
+
+CREATE AND RUN THE SERVER ------------------------------------------------------------------------------------------
+
 
 
 
