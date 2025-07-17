@@ -109,6 +109,9 @@ CONNECTING TO DATABASE ---------------------------------------------------------
 
 npm i mongoose, in api, import it. Then mongoose.connect("database link"). For database link, create project on mongodb, then create cluster, copy link and past in place.Link must contain username and password.
 
+Mongoose is an Object Data Modeling (ODM) library for MongoDB. Define a structure for your data (called a schema)
+Save, read, update, and delete data easily.
+
 Username -- Abhishek 
 Password -- @Dsa550!, url incodede version - %40Dsa550%21. (Special characters like !, @, :, etc. in passwords break URLs unless they are URL-encoded.)
 
@@ -117,3 +120,6 @@ Can't use enviromental variable inside backend, so have to do npm i dotenv and i
 We use .then() and .catch() to handle Promises in JavaScript. A Promise is a way to handle asynchronous operations. 
 .then() and .catch() are methods that belong to Promise objects in JavaScript.
 .then() runs when the Promise is fulfilled (i.e. successful). .catch() runs when the Promise is rejected (i.e. it fails or errors).
+
+
+CREATING USER MODELS ------------------------------------------------------------------------------------------------
