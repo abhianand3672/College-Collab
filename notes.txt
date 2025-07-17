@@ -95,7 +95,25 @@ p-3-Applies padding of 0.75rem (12px) on all sides (top, right, bottom, left).
 
 CREATE AND RUN THE SERVER ------------------------------------------------------------------------------------------
 
+1.Inside api, npm init -y for package.json. Then npm i express for express. Create index.js for creating server, then npm i nodemon.
+
+2.A callback is a function passed as an argument to another function.This technique allows a function to call another function. When you pass a function as an argument, remember not to use parenthesis.
+
+3.app.listen(3000, () => {                          {/* calling listen function/method. () => {} arrow function*/}
+    console.log('Server is running of port 3000');
+}). 
+After function call we can't directly apply {inside message}, only possible in function/method definition.
 
 
+CONNECTING TO DATABASE ----------------------------------------------------------------------------------------------
 
+npm i mongoose, in api, import it. Then mongoose.connect("database link"). For database link, create project on mongodb, then create cluster, copy link and past in place.Link must contain username and password.
 
+Username -- Abhishek 
+Password -- @Dsa550!, url incodede version - %40Dsa550%21. (Special characters like !, @, :, etc. in passwords break URLs unless they are URL-encoded.)
+
+Can't use enviromental variable inside backend, so have to do npm i dotenv and import it.
+
+We use .then() and .catch() to handle Promises in JavaScript. A Promise is a way to handle asynchronous operations. 
+.then() and .catch() are methods that belong to Promise objects in JavaScript.
+.then() runs when the Promise is fulfilled (i.e. successful). .catch() runs when the Promise is rejected (i.e. it fails or errors).
