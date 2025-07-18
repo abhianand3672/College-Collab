@@ -131,3 +131,9 @@ CREATE API ROUTE----------------------------------------------------------------
 An API, or Application Programming Interface, is a set of rules and specifications that allows different software systems to communicate and interact with each other. It acts as a messenger, enabling one application to request data or functionality from another.
 
 Create route in api folder, inside it user.route.js.
+
+      export	                   Correct import
+export const signup = ..      import { signup } from './file.js'
+export default signup;	      import signup from './file.js'
+
+npm i bcryptjs -- for password encryption

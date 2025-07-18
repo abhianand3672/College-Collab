@@ -1,5 +1,3 @@
 export const test = (req,res)=>{
-    res.json({
-        message:'Api is working!',
-    })
+   const {username, password} = req.body;
 }
