@@ -124,8 +124,6 @@ We use .then() and .catch() to handle Promises in JavaScript. A Promise is a way
 
 CREATING USER MODELS -------------------------------------------------------------------------------------
 
-
-
 CREATE API ROUTE-----------------------------------------------------------------------------------------
 
 An API, or Application Programming Interface, is a set of rules and specifications that allows different software systems to communicate and interact with each other. It acts as a messenger, enabling one application to request data or functionality from another.
@@ -136,4 +134,25 @@ Create route in api folder, inside it user.route.js.
 export const signup = ..      import { signup } from './file.js'
 export default signup;	      import signup from './file.js'
 
-npm i bcryptjs -- for password encryption
+npm i bcryptjs -- for password encryption, bcryptjs is a JavaScript library. It's used to securely store passwords in a database.
+
+hashSync(...)	A synchronous method that returns the hashed version of a string (i.e., the password).
+
+About - const hashedPassword = bcryptjs.hashSync(password,10);
+
+Password hashing is a process that converts a password into an irreversible, fixed-length string of characters.
+"salt" is a unique, random string added to a password before it's hashed. Without a salt, identical passwords would produce the same hash, allowing attackers to use precomputed tables to crack them quickly.
+
+The number 10 is the cost factor or salt rounds.
+🔁 It means bcrypt will perform 2¹⁰ = 1024 iterations of hashing.
+
+Feature	      try...catch	             .then().catch()
+Used with	    async/await	               Promises
+
+Flow of code -- index.js -This is the main entry file. It sets up Express and connects routes:
+                routes.js -This defines what endpoint maps to which controller function:
+                controllers.js -This handles the actual logic — e.g., saving user to DB, hashing passwords, etc.
+
+
+CREATING MIDDLEWARE AND FUNCTION TO HANDEL POSSIBLE ERROR ------------------------------------------------------------
+

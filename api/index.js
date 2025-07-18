@@ -22,3 +22,15 @@ app.listen(3000, () => {                          {/* calling listen function/me
 
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
+
+app.use((err, req, res, nest)=>{
+    const statusCode = err.statusCode || 500;
+    const message = err.message || "Internal Serer Error";
+
+    return res.status(statusCode).json({
+        success:false,
+        statusCode,
+        message,
+    
+    });
+});
