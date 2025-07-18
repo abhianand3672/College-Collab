@@ -122,4 +122,12 @@ We use .then() and .catch() to handle Promises in JavaScript. A Promise is a way
 .then() runs when the Promise is fulfilled (i.e. successful). .catch() runs when the Promise is rejected (i.e. it fails or errors).
 
 
-CREATING USER MODELS ------------------------------------------------------------------------------------------------
+CREATING USER MODELS -------------------------------------------------------------------------------------
+
+
+
+CREATE API ROUTE-----------------------------------------------------------------------------------------
+
+An API, or Application Programming Interface, is a set of rules and specifications that allows different software systems to communicate and interact with each other. It acts as a messenger, enabling one application to request data or functionality from another.
+
+Create route in api folder, inside it user.route.js.

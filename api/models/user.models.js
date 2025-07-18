@@ -24,6 +24,6 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }   //time of creation and updation
 );
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);  
 
-export default User;
+export default User;  //so that we can use it anywhere in the application
