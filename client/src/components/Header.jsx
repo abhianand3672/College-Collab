@@ -10,8 +10,8 @@ export default function Header() {
           <Link to='/'>
           {/*text-sm and flex flex-wrap -> for phone sm:text-xl -> for desktop*/}
             <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-              <span className="text-blue-600">Skill</span>
-              <span className="text-blue-400">Radar</span>
+              <span className="text-blue-700 mr-1">Skill</span>
+              <span className="text-blue-500">Share</span>
             </h1>
           </Link>
 
@@ -28,7 +28,7 @@ export default function Header() {
             </Link>
             <Link to='/sign-in'>
             <li className="text-blue-600 hover:underline">
-              Sign In
+              Sign in
             </li>
             </Link>
           </ul>

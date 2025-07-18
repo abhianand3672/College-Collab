@@ -2,7 +2,7 @@ import User from "../models/user.model.js";
 import bcryptjs from 'bcryptjs';                              {/*For password hashing*/}
 import { errorHandler } from "../utils/error.js";
 
-export const signup = async(req, res, next)=>{                {/*async for making it asynchronous*/}
+export const signup = async(req, res, next)=>{     {/*async for making it asynchronous, becoz have to save user */}
 
     const {username, email, password} = req.body;
     const hashedPassword = bcryptjs.hashSync(password,10);
@@ -16,7 +16,7 @@ export const signup = async(req, res, next)=>{                {/*async for makin
     } 
     catch (error) {
         next(error);
-        // next(errorHandler(550, 'error from function'));    {/*manual error*/}
+        // next(errorHandler(550, 'error from function'));    {/*manual error, like password incorrect*/}
     }
     
 
