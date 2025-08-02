@@ -29,7 +29,7 @@ export const signup = async (req, res, next) => {
 };
 
 
-export const signin = async(req, res, next)=>{     {/*async for making it asynchronous, becoz have to save user */}
+export const signin = async(req, res, next)=>{     {/*async for making it asynchronous, becoz have to save user*/}
   
 const {email, password} = req.body;
 
@@ -42,7 +42,7 @@ const {email, password} = req.body;
 
         const token = jwt.sign({id: user._id}, process.env.JWT_SECRET);  {/*signing the token with user id and secret key*/}
         
-        // Remove password from user object before sending
+        /*Remove password from user object before sending*/
         const { password: pass, ...rest } = user._doc;
         
         res.cookie('access_token', token, { httpOnly: true, })

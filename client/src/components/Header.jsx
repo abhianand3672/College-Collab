@@ -127,7 +127,7 @@ export default function Header() {
         )}
       </header>
       
-      {/* Overlay to close dropdown when clicking outside */}
+      {/* Overlay to close dropdown when clicking outside*/}
       {showDropdown && (
         <div 
           className="md:hidden fixed inset-0 bg-black bg-opacity-25 z-40"

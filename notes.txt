@@ -212,10 +212,3 @@ COMPLETE Sign in PAGE functionality---------------------------------------------
 
 ADD REDUX TOOLKIT -------------------------------------------------------------------------------------------------
 
-🧰 When to Use Redux Toolkit
-Global state like auth, user info, cart, theme(so that we can have access it anywhere)
-Shared data across multiple components
-You need caching, memoization, or async handling
-
-learn -- Redux, Context api, api, rest api, link vs api.
-

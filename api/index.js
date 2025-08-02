@@ -32,6 +32,9 @@ app.listen(3000, () => {                          {/* calling listen function/me
 
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
+app.get('/', (req, res) => {
+  res.send('Welcome to the Home Page');
+});
 
 app.use((err, req, res, next)=>{                     {/*error-handling middleware, run for every request*/}
     const statusCode = err.statusCode || 500;
