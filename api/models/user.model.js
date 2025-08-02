@@ -16,6 +16,31 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // Profile fields
+    name: {
+      type: String,
+      default: null,
+    },
+    collegeName: {
+      type: String,
+      default: null,
+    },
+    skills: {
+      type: String,
+      default: null,
+    },
+    linkedin: {
+      type: String,
+      default: null,
+    },
+    skillLinks: {
+      type: [String],
+      default: [],
+    },
+    isRegistered: {
+      type: Boolean,
+      default: false,
+    },
     // avatar:{
     //   type: String,
     //   default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"

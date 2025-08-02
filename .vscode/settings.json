@@ -12,5 +12,6 @@
         "json": true,
         "jsonc": true
     },
-    "github.copilot.nextEditSuggestions.enabled": true
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.sendKeybindingsToShell": true
 }
