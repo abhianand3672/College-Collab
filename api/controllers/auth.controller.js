@@ -13,7 +13,7 @@ export const signup = async (req, res, next) => {
     await newUser.save();
     res.status(201).json('User created successfully!');
   } catch (error) {
-    // error.code === 11000 → MongoDB’s duplicate key error.
+    // error.code === 11000 → MongoDB's duplicate key error.
     if (error.code === 11000) {
       const field = Object.keys(error.keyPattern)[0]; // 'username' or 'email'
       const message =
@@ -23,7 +23,7 @@ export const signup = async (req, res, next) => {
       return next(errorHandler(400, message));
     }
 
-    // ⛔ Generic error fallback
+    // Generic error fallback
     next(error);
   }
 };
