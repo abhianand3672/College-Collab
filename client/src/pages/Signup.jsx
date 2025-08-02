@@ -16,7 +16,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(!formData.username || !formData.email || !formData.password) {
-      setError('All fields are required');
+      setError('All details are required');
       return;
     }
     setError(null); // clear previous errors
